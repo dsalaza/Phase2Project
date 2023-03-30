@@ -8,6 +8,7 @@ import Navbar from "./Navbar.js"
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route 
         path='/'
