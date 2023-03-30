@@ -57,9 +57,9 @@ code {
 
 .NavButtons {
   display: inline-block;
-  padding: 2rem, 0;
-  width: 8rem;
-  font-size: 1.75vw;
+  padding: 2.5rem, 2rem;
+  width: 9rem;
+  font-size: 2vw;
   margin: 50px;
 }
 
