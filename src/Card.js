@@ -15,6 +15,7 @@ function Card(props) {
             <p className='cardtext'>Review: {props.singlereview.reviewbody}</p>
             <p className='cardtext'>Author: {props.singlereview.reviewauthor}</p>
         </div>
+        <input className="deleteButton" type="button" value="Delete"/>
     </div>
   )
 }
