@@ -2,7 +2,10 @@ import React from 'react'
 
 function Explorer() {
   return (
-    <div>Explorer</div>
+    <div>
+        <h1 id='exploreheader'>Explore Reviews</h1>
+        <p id='mainexpcontainer'></p>
+    </div>
   )
 }
 

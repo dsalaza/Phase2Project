@@ -1,32 +1,19 @@
 {
-    "reviews": [
-        {
-        "id": 1,
-        "title": "HELLBOY",
-        "rating": "8",
-        "artistname": "Lil Peep",
-        "url": "https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/05/9b/e8/059be881-95d0-2b85-c8ea-1e3a2a94455e/5060550031904_1.jpg/600x600bb.jpg",
-        "genre": "Hip-hop",
-        "subgenre": "Emo-rap",
-        "releasedate": "",
-        "favoritesong": "nose ring",
-        "leastfavoritesong": "gucci mane",
-        "reviewbody": "banger",
-        "reviewauthor": "Devon Salazar"
-        },
-        {
-        "id": 2,
-        "title": "crybaby",
-        "rating": "8.5",
-        "artistname": "Lil Peep",
-        "url": "https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/8d/0d/3c/8d0d3c24-a9ce-816f-4646-f3f36fea02d5/5060550031799_1.jpg/600x600bb.jpg",
-        "genre": "Hip-hop",
-        "subgenre": "Emo-rap",
-        "releasedate": "",
-        "favoritesong": "absolute in doubt",
-        "leastfavoritesong": "N/A",
-        "reviewbody": "Fire",
-        "reviewauthor": "Devon Salazar"
-        } 
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
