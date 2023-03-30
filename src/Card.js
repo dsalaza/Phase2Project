@@ -1,21 +1,31 @@
 import React from 'react'
 
-function Card(props) {
+function Card({ singlereview}) {
+
+    function handleDelete() {
+        fetch(`http://localhost:3000/reviews/${singlereview.id}`, {
+            method: "DELETE",
+        })
+        .then((resp) => resp.json())
+        .then((data) => console.log(`data`))
+
+    }
+
   return (
     <div className='card'>
-        <img id='coverart' src={props.singlereview.url}/>
+        <img id='coverart' src={singlereview.url}/>
         <div className='cardtext'>
-            <h2 id='titleheader'>{props.singlereview.title} - {props.singlereview.rating}</h2>
-            <p className='cardtext'>Artist Name: {props.singlereview.artistname}</p>
-            <p className='cardtext'>Release Date: {props.singlereview.releasedate}</p>
-            <p className='cardtext'>Genre: {props.singlereview.genre}</p>
-            <p className='cardtext'>Subgenre: {props.singlereview.subgenre}</p>
-            <p className='cardtext'>Highlight: {props.singlereview.favoritesong}</p>
-            <p className='cardtext'>Low point: {props.singlereview.leastfavoritesong}</p>
-            <p className='cardtext'>Review: {props.singlereview.reviewbody}</p>
-            <p className='cardtext'>Author: {props.singlereview.reviewauthor}</p>
+            <h2 id='titleheader'>{singlereview.title} - {singlereview.rating}</h2>
+            <p className='cardtext'>Artist Name: {singlereview.artistname}</p>
+            <p className='cardtext'>Release Date: {singlereview.releasedate}</p>
+            <p className='cardtext'>Genre: {singlereview.genre}</p>
+            <p className='cardtext'>Subgenre: {singlereview.subgenre}</p>
+            <p className='cardtext'>Highlight: {singlereview.favoritesong}</p>
+            <p className='cardtext'>Low point: {singlereview.leastfavoritesong}</p>
+            <p className='cardtext'>Review: {singlereview.reviewbody}</p>
+            <p className='cardtext'>Author: {singlereview.reviewauthor}</p>
         </div>
-        <input className="deleteButton" type="button" value="Delete"/>
+        <input className="deleteButton" type="button" value="Delete" onClick={handleDelete}/>
     </div>
   )
 }

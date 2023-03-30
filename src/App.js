@@ -18,8 +18,6 @@ function App() {
       .then(resp => resp.json())
       .then(data => setReviewArray(data))
   }, [])
- 
-  console.log(reviewArray)
 
   return (
     <div className="App" id="mainbackground">

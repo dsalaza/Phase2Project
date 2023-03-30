@@ -3,9 +3,11 @@ import Card from './Card'
 
 function Explorer({ initialReviews }) {
 
+   
+
     const updatedReviews = initialReviews.map((review) => {
         return(   
-                <Card 
+                <Card
                 singlereview={review}
                 key={review.id}
                 />
