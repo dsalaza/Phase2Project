@@ -18,6 +18,12 @@ code {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+}
 
-
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 8px;
 }
