@@ -35,7 +35,7 @@ function App() {
         />
         <Route 
         path='/explore'
-        element={<Explorer />}
+        element={<Explorer initialReviews={reviewArray}/>}
         />
      </Routes>
     </div>
