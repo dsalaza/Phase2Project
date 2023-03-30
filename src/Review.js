@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 
 
-function Review() {
+function Review({ onAddReview }) {
 
     const [title, setTitle] = useState('')
     const [rating, setRating] = useState('')
@@ -33,6 +33,16 @@ function Review() {
             "reviewbody": body,
             "reviewauthor": author
             }
+
+            fetch("http://localhost:3000/reviews", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newObj)
+            })
+            .then(resp => resp.json())
+            .then(data => onAddReview(data))
         }
 
   return (
