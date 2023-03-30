@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Card({ singlereview}) {
+function Card({ singlereview, onDeleteReview }) {
 
     function handleDelete() {
         fetch(`http://localhost:3000/reviews/${singlereview.id}`, {
             method: "DELETE",
         })
         .then((resp) => resp.json())
-        .then((data) => console.log(`data`))
+        .then((data) => onDeleteReview(singlereview))
 
     }
 

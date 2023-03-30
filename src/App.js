@@ -33,7 +33,7 @@ function App() {
         />
         <Route 
         path='/explore'
-        element={<Explorer initialReviews={reviewArray}/>}
+        element={<Explorer initialReviews={reviewArray} setReviewArray={setReviewArray}/>}
         />
      </Routes>
     </div>

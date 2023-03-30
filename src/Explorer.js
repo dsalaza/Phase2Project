@@ -1,13 +1,18 @@
 import React from 'react'
 import Card from './Card'
 
-function Explorer({ initialReviews }) {
+function Explorer({ initialReviews, setReviewArray }) {
 
-   
+    function deleteReview(deletedReview) {
+        const updatedReviews = initialReviews.filter((review) => review.id !== deletedReview.id)
+        setReviewArray(updatedReviews)
+        console.log(`here`)
+    }
 
     const updatedReviews = initialReviews.map((review) => {
         return(   
                 <Card
+                onDeleteReview={deleteReview}
                 singlereview={review}
                 key={review.id}
                 />
