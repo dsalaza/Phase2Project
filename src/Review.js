@@ -36,7 +36,7 @@ function Review() {
         }
 
   return (
-    <div>
+    <div id="review">
         <h2>Enter Your Review:</h2>
             <form id='newReviewForm' onSubmit={handleSubmit}>
 
