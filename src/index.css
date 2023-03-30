@@ -86,3 +86,11 @@ code {
   font-size: 6vw;
   text-align: center;
 }
+
+#newReviewForm {
+  color: white;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
