@@ -47,7 +47,7 @@ function Review({ onAddReview }) {
 
   return (
     <div id="review">
-        <h2>Enter Your Review:</h2>
+        <h2 id="reviewHeader">Enter Your Review:</h2>
             <form id='newReviewForm' onSubmit={handleSubmit}>
 
                 <label htmlFor='albumTitle'>Album Title</label>

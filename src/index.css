@@ -94,3 +94,9 @@ code {
   flex-direction: column;
   margin: 1rem;
 }
+
+#reviewHeader {
+  color: white;
+  text-align: center;
+  font-size: 6vw;
+}
