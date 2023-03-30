@@ -46,13 +46,14 @@ code {
 #backgroundimg {
   background-color: #74b9ff;
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   z-index: 1;
   text-align: center;
 }
 
 #mainbackground {
   background-color: #74b9ff;
+  height: 100%;
 }
 
 .NavButtons {

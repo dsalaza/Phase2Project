@@ -18,7 +18,6 @@ function Review({ onAddReview }) {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(event)
 
         const newObj =  {
             "rating": rating,
