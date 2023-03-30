@@ -49,3 +49,7 @@ code {
   z-index: 1;
   text-align: center;
 }
+
+#mainbackground {
+  background-color: #74b9ff;
+}

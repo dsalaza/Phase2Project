@@ -22,7 +22,7 @@ function App() {
   console.log(reviewArray)
 
   return (
-    <div className="App">
+    <div className="App" id="mainbackground">
       <Navbar />
       <Routes>
         <Route 
