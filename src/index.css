@@ -27,3 +27,9 @@ code {
   text-align: center;
   margin: 8px;
 }
+
+#coverart {
+  width: 100%;
+  border-bottom: solid;
+ }
+ 
