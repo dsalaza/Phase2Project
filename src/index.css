@@ -40,6 +40,7 @@ code {
   margin: 4%;
   height: 80%;
   border-style: solid;
+  text-align: center;
 }
 
 #backgroundimg {
@@ -99,4 +100,8 @@ code {
   color: white;
   text-align: center;
   font-size: 6vw;
+}
+
+.deleteButton {
+  width: 100%;
 }
