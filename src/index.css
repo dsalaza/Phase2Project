@@ -53,3 +53,15 @@ code {
 #mainbackground {
   background-color: #74b9ff;
 }
+
+.NavButtons {
+  display: inline-block;
+  padding: 2rem, 0;
+  width: 8rem;
+  font-size: 1.75vw;
+  margin: 50px;
+}
+
+#divcontainer {  
+  text-align: center;
+}

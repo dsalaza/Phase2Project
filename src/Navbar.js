@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom"
 
 function Navbar() {
   return (
-    <div>
+    <div id="divcontainer">
         <nav>
             <NavLink to='/explore'>
                 <button className={'NavButtons'} type='button'>Explore</button>
