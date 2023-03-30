@@ -65,3 +65,18 @@ code {
 #divcontainer {  
   text-align: center;
 }
+
+#homepageHeader {
+  display: inline-block;
+  margin:0 auto;
+  z-index: 3;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 100x;
+  font-size: 12vw;
+}
+
+.homepageSubheader {
+  color: white;
+  font-size: 4vw;
+}
