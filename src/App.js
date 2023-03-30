@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Homepage from "./Homepage.js"
 import Explorer from "./Explorer.js"
 import Review from "./Review.js"
-
+import Navbar from "./Navbar.js"
 
 function App() {
   return (
