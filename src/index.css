@@ -33,3 +33,11 @@ code {
   border-bottom: solid;
  }
  
+ .card {
+  background-color: white;
+  width: 40%;
+  display: inline-block;
+  margin: 4%;
+  height: 80%;
+  border-style: solid;
+}
