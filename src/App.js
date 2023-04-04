@@ -8,6 +8,7 @@ import Navbar from "./Navbar.js"
 function App() {
 
   const [reviewArray, setReviewArray] = useState([])
+  
   function addReview(newReview) {
     const newReviewArray = [...reviewArray, newReview]
     setReviewArray(newReviewArray)

@@ -19,7 +19,7 @@ function Explorer({ initialReviews, setReviewArray }) {
     });
 
   return (
-    <div>
+    <div id="explorecontainer">
         <h1 id='exploreheader'>Explore Reviews</h1>
         <span id='mainexpcontainer'>{updatedReviews}</span>
     </div>

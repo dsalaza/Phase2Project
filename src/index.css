@@ -106,3 +106,7 @@ code {
 .deleteButton {
   width: 100%;
 }
+
+#exploreContainer {
+  height: 1200px;
+}

@@ -42,6 +42,18 @@ function Review({ onAddReview }) {
             })
             .then(resp => resp.json())
             .then(data => onAddReview(data))
+            setTitle("")
+            setRating("")
+            setArtist("")
+            setReleaseDate("")
+            setGenre("")
+            setSubgenre("")
+            setHighlight("")
+            setLowpoint("")
+            setImageurl("")
+            setAuthor("")
+            setBody("")
+            
         }
 
   return (
@@ -50,19 +62,19 @@ function Review({ onAddReview }) {
             <form id='newReviewForm' onSubmit={handleSubmit}>
 
                 <label htmlFor='albumTitle'>Album Title</label>
-                <input type='text' id='albumTitle'  onChange={e => setTitle(e.target.value)}/>
+                <input value={title} type='text' id='albumTitle'  onChange={e => setTitle(e.target.value)}/>
 
                 <label htmlFor='rating'>Rating</label>
-                <input type='text' id='rating' onChange={e => setRating(e.target.value)}/>
+                <input value={rating} type='text' id='rating' onChange={e => setRating(e.target.value)}/>
                 
                 <label htmlFor='bandName'>Artist Name</label>
-                <input type='text' id='bandName' onChange={e => setArtist(e.target.value)}/>
+                <input value={artist} type='text' id='bandName' onChange={e => setArtist(e.target.value)}/>
                 
                 <label htmlFor='releaseDate'>Release Date</label>
-                <input type='text' id='releaseDate' onChange={e => setReleaseDate(e.target.value)}/>
+                <input value={releaseDate} type='text' id='releaseDate' onChange={e => setReleaseDate(e.target.value)}/>
 
                 <label htmlFor='genre'>Genre</label>
-                <select id='genre' onChange={e => setGenre(e.target.value)}>
+                <select value={genre} id='genre' onChange={e => setGenre(e.target.value)}>
                     <option></option>
                     <option value='Alternative'>Alternative</option>
                     <option value='Blues'>Blues</option>
@@ -77,26 +89,24 @@ function Review({ onAddReview }) {
                 </select>
 
                 <label htmlFor='subgenre'>Subgenre</label>
-                <input type='text' id='subgenre' onChange={e => setSubgenre(e.target.value)}/>
+                <input value={subgenre} type='text' id='subgenre' onChange={e => setSubgenre(e.target.value)}/>
 
                 <label htmlFor='highlight'>Highlight</label>
-                <input type='text' id='highlight' onChange={e => setHighlight(e.target.value)}/>
+                <input value={highlight} type='text' id='highlight' onChange={e => setHighlight(e.target.value)}/>
 
                 <label htmlFor='lowpoint'>Low Point</label>
-                <input type='text' id='lowpoint' onChange={e => setLowpoint(e.target.value)}/>
+                <input value={lowpoint} type='text' id='lowpoint' onChange={e => setLowpoint(e.target.value)}/>
                 
                 <label htmlFor='imgURL'>Album Cover URL</label>
-                <input type='text' id='imgURL' onChange={e => setImageurl(e.target.value)}/>
+                <input value={imageurl} type='text' id='imgURL' onChange={e => setImageurl(e.target.value)}/>
 
                 <label htmlFor='authorname'>Author Name</label>
-                <input type='text' id='reviewBody' onChange={e => setAuthor(e.target.value)}/>
+                <input value={author} type='text' id='reviewBody' onChange={e => setAuthor(e.target.value)}/>
                 
                 <label htmlFor='reviewbody'>Your Review</label>
-                <input type='text' id='reviewBody' onChange={e => setBody(e.target.value)}/>
+                <input value={body} type='text' id='reviewBody' onChange={e => setBody(e.target.value)}/>
 
-                <button type="submit" onClick={console.log('posting')}>Post</button>
-                
-
+                <button type="submit">Post</button>
             </form>
     </div>
   )
